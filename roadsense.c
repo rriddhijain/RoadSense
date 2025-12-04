@@ -81,8 +81,7 @@ static inline void led_on_for_level(uint8_t sev)
     }
 }
 
-/* ====================== UART TX (explicit) ====================== */
-/* Avoid stdout; send directly via DriverLib so Python .readline() sees bytes. */
+/* ====================== UART TX ====================== */
 
 static inline void uart_tx_byte(uint8_t b)
 {
@@ -100,16 +99,10 @@ static void uart_tx_str(const char *s)
 static void uart_send_line_json(const char *json)
 {
     uart_tx_str(json);
-    uart_tx_byte('\n');   // IMPORTANT: line terminator for host .readline()
+    uart_tx_byte('\n');
 }
 
-/* Optional: if any legacy code uses printf/fputs, route it here. */
-int fputc(int ch, FILE *stream)
-{
-    (void)stream;
-    uart_tx_byte((uint8_t)ch);
-    return ch;
-}
+
 
 /* ====================== JSON over UART ====================== */
 
@@ -190,8 +183,8 @@ int main(void)
     DL_ADC12_enableConversions(ADC12_0_INST);
     DL_TimerG_startCounter(TIMER_1_INST);
 
-    /* Optional boot banner for quick serial sanity check */
-    uart_send_line_json("{\"type\":\"BOOT\",\"msg\":\"MSPM0 online\",\"baud\":115200}");
+    /* Boot banner */
+    uart_send_line_json("{\"type\":\"BOOT\",\"msg\":\"RoadSense online\",\"baud\":115200}");
 
     /* ---- Establish baseline (~1 s) ---- */
     uint32_t acc = 0;
