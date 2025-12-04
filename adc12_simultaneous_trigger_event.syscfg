@@ -1,0 +1,101 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --device "MSPM0G350X" --part "Default" --package "LQFP-64(PM)" --product "mspm0_sdk@2.07.00.05"
+ * @v2CliArgs --device "MSPM0G3507" --package "LQFP-64(PM)" --product "mspm0_sdk@2.07.00.05"
+ * @versions {"tool":"1.25.0+4268"}
+ */
+
+/**
+ * Import the modules used in this configuration.
+ */
+const ADC12  = scripting.addModule("/ti/driverlib/ADC12", {}, false);
+const ADC121 = ADC12.addInstance();
+const Board  = scripting.addModule("/ti/driverlib/Board");
+const GPIO   = scripting.addModule("/ti/driverlib/GPIO", {}, false);
+const GPIO1  = GPIO.addInstance();
+const SYSCTL = scripting.addModule("/ti/driverlib/SYSCTL");
+const TIMER  = scripting.addModule("/ti/driverlib/TIMER", {}, false);
+const TIMER1 = TIMER.addInstance();
+const TIMER2 = TIMER.addInstance();
+const UART   = scripting.addModule("/ti/driverlib/UART", {}, false);
+const UART1  = UART.addInstance();
+
+/**
+ * Write custom configuration values to the imported modules.
+ */
+ADC121.$name               = "ADC12_0";
+ADC121.enabledInterrupts   = ["DL_ADC12_INTERRUPT_MEM0_RESULT_LOADED"];
+ADC121.trigSrc             = "DL_ADC12_TRIG_SRC_EVENT";
+ADC121.sampleTime0         = "25 us";
+ADC121.hwNumerator         = "DL_ADC12_HW_AVG_NUM_ACC_128";
+ADC121.hwDenominator       = "DL_ADC12_HW_AVG_DEN_DIV_BY_128";
+ADC121.repeatMode          = true;
+ADC121.sampClkDiv          = "DL_ADC12_CLOCK_DIVIDE_16";
+ADC121.configureDMA        = true;
+ADC121.sampClkSrc          = "DL_ADC12_CLOCK_ULPCLK";
+ADC121.enabledEvents       = ["DL_ADC12_EVENT_MEM0_RESULT_LOADED"];
+ADC121.subChanID           = 1;
+ADC121.adcMem0chansel      = "DL_ADC12_INPUT_CHAN_5";
+ADC121.DMA_CHANNEL.$name   = "DMA_CH0";
+ADC121.peripheral.$assign  = "ADC1";
+ADC121.adcPin5Config.$name = "ti_driverlib_gpio_GPIOPinGeneric0";
+
+
+GPIO1.$name                          = "GPIO_LEDS";
+GPIO1.port                           = "PORTB";
+GPIO1.associatedPins.create(3);
+GPIO1.associatedPins[0].$name        = "USER_LED_1";
+GPIO1.associatedPins[0].assignedPin  = "22";
+GPIO1.associatedPins[0].initialValue = "SET";
+GPIO1.associatedPins[1].$name        = "USER_LED_2";
+GPIO1.associatedPins[1].assignedPin  = "26";
+GPIO1.associatedPins[1].initialValue = "SET";
+GPIO1.associatedPins[2].$name        = "USER_LED_3";
+GPIO1.associatedPins[2].assignedPin  = "27";
+GPIO1.associatedPins[2].initialValue = "SET";
+
+SYSCTL.forceDefaultClkConfig = true;
+SYSCTL.clockTreeEn           = true;
+SYSCTL.SYSOSC_Freq           = 4000000;
+
+TIMER1.$name                       = "TIMER_0";
+TIMER1.event1PublisherChannel      = 1;
+TIMER1.timerMode                   = "PERIODIC_UP";
+TIMER1.timerPeriod                 = "5 ms";
+TIMER1.timerClkDiv                 = 4;
+TIMER1.event1ControllerInterruptEn = ["ZERO_EVENT"];
+TIMER1.event2ControllerInterruptEn = ["ZERO_EVENT"];
+TIMER1.peripheral.$assign          = "TIMG0";
+
+TIMER2.$name              = "TIMER_1";
+TIMER2.timerMode          = "PERIODIC_UP";
+TIMER2.timerPeriod        = "1 ms";
+TIMER2.timerStartTimer    = true;
+TIMER2.interrupts         = ["ZERO"];
+TIMER2.timerClkDiv        = 4;
+TIMER2.timerClkPrescale   = 250;
+TIMER2.peripheral.$assign = "TIMG6";
+
+UART1.$name                    = "UART_0";
+UART1.targetBaudRate           = 115200;
+UART1.profile                  = "CONFIG_PROFILE_1";
+UART1.peripheral.rxPin.$assign = "PA11";
+UART1.peripheral.txPin.$assign = "PA10";
+UART1.txPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric1";
+UART1.rxPinConfig.$name        = "ti_driverlib_gpio_GPIOPinGeneric2";
+
+/**
+ * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
+ * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
+ * re-solve from scratch.
+ */
+ADC121.DMA_CHANNEL.peripheral.$suggestSolution = "DMA_CH0";
+ADC121.peripheral.adcPin5.$suggestSolution     = "PB18";
+Board.peripheral.$suggestSolution              = "DEBUGSS";
+Board.peripheral.swclkPin.$suggestSolution     = "PA20";
+Board.peripheral.swdioPin.$suggestSolution     = "PA19";
+GPIO1.associatedPins[0].pin.$suggestSolution   = "PB22";
+GPIO1.associatedPins[1].pin.$suggestSolution   = "PB26";
+GPIO1.associatedPins[2].pin.$suggestSolution   = "PB27";
+UART1.peripheral.$suggestSolution              = "UART0";
