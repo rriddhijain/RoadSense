@@ -1,0 +1,72 @@
+[
+  {
+    "type": "SPEEDBRK",
+    "peak_mV": 289,
+    "width": 2000,
+    "timestamp": 892392,
+    "x": 892,
+    "y": 892,
+    "severity": null,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "SPEEDBRK",
+    "peak_mV": 273,
+    "width": 701,
+    "timestamp": 899322,
+    "x": 899,
+    "y": 899,
+    "severity": null,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "SPEEDBRK",
+    "peak_mV": 684,
+    "width": 2000,
+    "timestamp": 919610,
+    "x": 919,
+    "y": 919,
+    "severity": null,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "SPEEDBRK",
+    "peak_mV": 721,
+    "width": 427,
+    "timestamp": 934317,
+    "x": 934,
+    "y": 934,
+    "severity": null,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "SPEEDBRK",
+    "peak_mV": 341,
+    "width": 2000,
+    "timestamp": 967794,
+    "x": 967,
+    "y": 967,
+    "severity": null,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "SPEEDBRK",
+    "peak_mV": 437,
+    "width": 165,
+    "timestamp": 973337,
+    "x": 973,
+    "y": 973,
+    "severity": null,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "SPEEDBRK",
+    "peak_mV": 438,
+    "width": 486,
+    "timestamp": 1018164,
+    "x": 1018,
+    "y": 1018,
+    "severity": null,
+    "session": "2025-10-25_13-54-00"
+  }
+]

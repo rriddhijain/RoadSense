@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db     # if your sqlite DB is just runtime data
+
+# CCS / build artifacts
+Debug/
+*.out
+*.o
+*.d
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -1,0 +1,232 @@
+[
+  {
+    "type": "POTHOLE",
+    "peak_mV": 323,
+    "width": 935,
+    "timestamp": 892189,
+    "x": 892,
+    "y": 892,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 446,
+    "width": 784,
+    "timestamp": 892601,
+    "x": 892,
+    "y": 892,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 380,
+    "width": 1354,
+    "timestamp": 893349,
+    "x": 893,
+    "y": 893,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 340,
+    "width": 1319,
+    "timestamp": 907256,
+    "x": 907,
+    "y": 907,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 457,
+    "width": 2000,
+    "timestamp": 912073,
+    "x": 912,
+    "y": 912,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 943,
+    "width": 2000,
+    "timestamp": 912684,
+    "x": 912,
+    "y": 912,
+    "severity": 3,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 737,
+    "width": 2000,
+    "timestamp": 913788,
+    "x": 913,
+    "y": 913,
+    "severity": 2,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 1409,
+    "width": 2000,
+    "timestamp": 916416,
+    "x": 916,
+    "y": 916,
+    "severity": 3,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 426,
+    "width": 1955,
+    "timestamp": 921834,
+    "x": 921,
+    "y": 921,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 361,
+    "width": 1589,
+    "timestamp": 922413,
+    "x": 922,
+    "y": 922,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 462,
+    "width": 2000,
+    "timestamp": 923977,
+    "x": 923,
+    "y": 923,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 565,
+    "width": 2000,
+    "timestamp": 925316,
+    "x": 925,
+    "y": 925,
+    "severity": 2,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 653,
+    "width": 2000,
+    "timestamp": 930277,
+    "x": 930,
+    "y": 930,
+    "severity": 2,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 281,
+    "width": 435,
+    "timestamp": 934771,
+    "x": 934,
+    "y": 934,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 463,
+    "width": 276,
+    "timestamp": 934922,
+    "x": 934,
+    "y": 934,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 516,
+    "width": 895,
+    "timestamp": 962997,
+    "x": 962,
+    "y": 962,
+    "severity": 2,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 1084,
+    "width": 2000,
+    "timestamp": 965350,
+    "x": 965,
+    "y": 965,
+    "severity": 3,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 447,
+    "width": 1568,
+    "timestamp": 970256,
+    "x": 970,
+    "y": 970,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 342,
+    "width": 1448,
+    "timestamp": 971709,
+    "x": 971,
+    "y": 971,
+    "severity": 1,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 907,
+    "width": 1907,
+    "timestamp": 1004863,
+    "x": 1004,
+    "y": 1004,
+    "severity": 3,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 1247,
+    "width": 2000,
+    "timestamp": 1018441,
+    "x": 1018,
+    "y": 1018,
+    "severity": 3,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 633,
+    "width": 1843,
+    "timestamp": 1019316,
+    "x": 1019,
+    "y": 1019,
+    "severity": 2,
+    "session": "2025-10-25_13-54-00"
+  },
+  {
+    "type": "POTHOLE",
+    "peak_mV": 501,
+    "width": 185,
+    "timestamp": 1020273,
+    "x": 1020,
+    "y": 1020,
+    "severity": 2,
+    "session": "2025-10-25_13-54-00"
+  }
+]
