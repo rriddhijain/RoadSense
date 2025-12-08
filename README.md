@@ -34,11 +34,11 @@ Using advanced accelerometer analysis and proprietary classification algorithms,
 
 ## Why RoadSense Wins
 
-✅ **Scalable**: Deploy on any vehicle fleet—taxis, buses, delivery services, rideshare  
-✅ **Non-Intrusive**: Works with existing CAN bus or UART communication  
-✅ **Real-Time**: No cloud dependency—local processing with optional cloud sync  
-✅ **Data-Driven**: Transforms raw accelerometer noise into actionable infrastructure intelligence  
-✅ **Cost-Effective**: Leverages low-cost sensors already in vehicles  
+**Scalable**: Deploy on any vehicle fleet—taxis, buses, delivery services, rideshare  
+**Non-Intrusive**: Works with existing CAN bus or UART communication  
+**Real-Time**: No cloud dependency—local processing with optional cloud sync  
+**Data-Driven**: Transforms raw accelerometer noise into actionable infrastructure intelligence  
+**Cost-Effective**: Leverages low-cost sensors already in vehicles  
 
 ---
 
