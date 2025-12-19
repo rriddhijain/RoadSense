@@ -8,6 +8,11 @@ Using advanced accelerometer analysis and proprietary classification algorithms,
 
 ---
 
+**Developed by:**  
+[Shivansh Srivastava](https://github.com/InvisibleOS) · [Riddhi Jain](https://github.com/rriddhijain)
+
+---
+
 ## What We Do
 
 ### Real-Time Detection
