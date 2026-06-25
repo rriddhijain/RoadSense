@@ -8,7 +8,7 @@ Using advanced accelerometer analysis and proprietary classification algorithms,
 
 ---
 
-**Developed by:**  
+**RoadSense was developed collaboratively by:**  
 [Shivansh Srivastava](https://github.com/InvisibleOS) · [Riddhi Jain](https://github.com/rriddhijain)
 
 ---
